@@ -21,9 +21,7 @@ setup(
     install_requires=open(os.path.join(BASE_DIR, 'requirements.txt')).read().split(),
     packages=find_packages(),
     include_package_data=True,
-    entry_points={'console_scripts': [
-        'kegg_viewer = kegg_viewer.bin.main:main',
-    ]},
+    entry_points={},
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Operating System :: OS Independent',
@@ -32,6 +30,8 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries'
     ]
 )
