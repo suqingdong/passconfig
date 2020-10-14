@@ -5,15 +5,15 @@ from setuptools import setup, find_packages
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 version_info = json.load(open(os.path.join(BASE_DIR, 'passconfig', 'version.json')))
+
 
 setup(
     name='passconfig',
     version=version_info['version'],
     author=version_info['author'],
     author_email=version_info['author_email'],
-    description='View/Highlight KEGG Pathway',
+    description='A Simple Username and Password Manager',
     long_description=open(os.path.join(BASE_DIR, 'README.md')).read(),
     long_description_content_type="text/markdown",
     url='https://github.com/suqingdong/passconfig',
